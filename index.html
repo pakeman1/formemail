@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formemail.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contacts">
+
+        <h2 class="heading"><span>Contact</span> Us</h2>
+
+        <div class="row">
+
+            <div class="img">
+                <img src="https://cdn-icons-png.flaticon.com/512/2475/2475235.png" width="300vw" >
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="1f6541b2-2aac-4463-a418-0b5e4116a21b">
+
+                <span>Your name</span>
+                <input type="text" name="name" id="" class="box" required
+                placeholder="Enter your name..." autocomplete="off">
+                
+                <span>Your email</span>
+                <input type="text" name="email" id="" class="box" required
+                placeholder="Enter your email..." autocomplete="off">
+                
+                <span>Your namber</span>
+                <input type="text" name="namber" id="" class="box" required
+                placeholder="Enter your namber..." autocomplete="off">
+
+                <span>Selelect curses</span>
+                <select name="courses" id="" class="box" required>
+                    <option value="" disabled selected>Select courses</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                </select>
+
+                <span>Select gender</span>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male"
+                    value="male">
+                    <label for="male">male</label>
+                    
+                    <input type="radio" name="gender" id="female"
+                    value="female">
+                    <label for="female">female</label>
+                </div>
+
+                <input type="submit" value="Send data" class="btn" name="send">
+
+            </form>
+
+        </div>
+
+    </section>
+</body>
+</html>
